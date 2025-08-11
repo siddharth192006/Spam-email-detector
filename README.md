@@ -2,7 +2,7 @@
 
 A client-side web application to detect spam emails using JavaScript.
 
-![Spam Email Detector Demo](https://siddharth192006.github.io/Spam-email-detector/assets/demo.png)
+![Spam Email Detector Demo](spam.png)
 
 ## Live Demo
 
