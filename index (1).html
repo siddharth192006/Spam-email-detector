@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Email Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-shield-alt"></i> Spam Shield</h1>
+            <p class="subtitle">AI-powered email spam detection</p>
+        </header>
+        
+        <div class="detector-container">
+            <div class="input-section">
+                <textarea id="email-text" placeholder="Paste your email or message here..."></textarea>
+                <button id="detect-btn">Detect Spam</button>
+            </div>
+            
+            <div class="result-section">
+                <div id="result" class="hidden">
+                    <h3>Analysis Result:</h3>
+                    <div id="result-content">
+                        <i id="result-icon" class="fas fa-question-circle"></i>
+                        <span id="result-text">Waiting for input...</span>
+                    </div>
+                    <div id="confidence-meter">
+                        <div class="confidence-bar">
+                            <div id="confidence-level" class="confidence-level"></div>
+                        </div>
+                        <span id="confidence-value">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <div class="stat-card">
+                <i class="fas fa-database"></i>
+                <h3>Model Accuracy</h3>
+                <p>95.2%</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Detection Speed</h3>
+                <p>&lt; 1 second</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Last Updated</h3>
+                <p>July 2023</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
